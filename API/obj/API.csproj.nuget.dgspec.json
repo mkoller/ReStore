@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj": {}
+    "c:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj": {
+    "c:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj",
+        "projectPath": "c:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj",
         "packagesPath": "C:\\Users\\miles\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\obj\\",
+        "outputPath": "c:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\miles\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,8 +21,6 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.znode.com/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +40,14 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
