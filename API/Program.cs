@@ -28,4 +28,19 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+//Create DB Scope
+var scope =app.Services.CreateScope();
+var context = scope.ServiceProvider.GetRequiredService<StoreContext>();
+var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+try
+{
+    context.Database.Migrate();
+    DbInitializer.Initalize(context);
+}
+catch (Exception ex)
+{
+    
+    logger.LogError(ex, "A problem occured during Migration" );
+}
+
 app.Run();
