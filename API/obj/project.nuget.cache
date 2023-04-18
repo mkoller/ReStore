@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GYND0j/YrfMKcjI7200oA+JRlYVqttu+GKsmxFNo4O5hVXebb6n1+Bytpwbdzb9O9Lgxx9legYDMtuorvq0Ueg==",
+  "dgSpecHash": "SGv1RUtRl2rsZa1/TAreN6VLYDlV6xhS9RYgEXLoK2PfocZUwi5hz6jWiMSSTtRyU0gyOVqdHgqvlc4I6YmR0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\miles\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\miles\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",

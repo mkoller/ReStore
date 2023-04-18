@@ -9,8 +9,8 @@ function App() {
   useEffect(()=> { //react hook
     fetch('http://localhost:5000/api/products')
       .then(response => response.json())
-      .then(data => setProducts(data))
-  }, []) //empty array as dependency to prevent an infinite request ,only executes twice for strict mode
+      .then(data => setProducts(data)) // sets the state
+  }, []) //empty array as dependency to prevent an infinite request, only executes twice for strict mode
 
   function addProduct() {
     setProducts(prevState => [...prevState, 
