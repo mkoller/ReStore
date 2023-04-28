@@ -1719,11 +1719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\api\\API.csproj",
+      "projectUniqueName": "C:\\Users\\miles\\Desktop\\miles\\training\\ReStore\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\api\\API.csproj",
+      "projectPath": "C:\\Users\\miles\\Desktop\\miles\\training\\ReStore\\api\\API.csproj",
       "packagesPath": "C:\\Users\\miles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\miles\\OneDrive\\Desktop\\miles\\training\\ReStore\\api\\obj\\",
+      "outputPath": "C:\\Users\\miles\\Desktop\\miles\\training\\ReStore\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\miles\\AppData\\Roaming\\NuGet\\NuGet.Config",
