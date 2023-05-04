@@ -58,7 +58,7 @@ export default function Header({handleThemeChange, darkMode}: Props) {
                     ))}
                 </List>
                 <Box display='flex' alignItems='center'>
-                <IconButton component={Link} to='/basket'  size='large' edge='start' color='inherit' sx={{ mr: 2 }}>
+                <IconButton component={Link} to='/basket' size='large' edge='start' color='inherit' sx={{ mr: 2 }}>
                         <Badge badgeContent='4' color='secondary'>
                             <ShoppingCart />
                         </Badge>
