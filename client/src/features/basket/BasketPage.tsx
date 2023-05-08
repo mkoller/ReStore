@@ -5,6 +5,7 @@ import { useState } from "react";
 import agent from "../../app/api/agent";
 import { error } from "console";
 import { LoadingButton } from "@mui/lab";
+import BasketSummary from "./BasketSummary";
 
 export default function BasketPage() {
     const {basket, setBasket, removeItem} = useStoreContext();
@@ -33,7 +34,7 @@ export default function BasketPage() {
 
     return (
         <>
-        <TableContainer component={Paper}>
+                <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
@@ -91,13 +92,14 @@ export default function BasketPage() {
         <Grid container>
             <Grid item xs={6} />
             <Grid item xs={6}>
-                
+                <BasketSummary />
                 <Button>
-                
                     Checkout
                 </Button>
             </Grid>
         </Grid>
     </>
+
+
     )
 }
