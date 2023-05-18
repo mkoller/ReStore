@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './app/layout/styles.css';
-import App from './app/layout/App';
 import reportWebVitals from './reportWebVitals';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -11,11 +10,13 @@ import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router/Routes';
 import { Provider } from 'react-redux';
 import { store } from './app/store/configureStore';
-import { StoreProvider } from './app/context/StoreContext';
+import { fetchProductAsync } from './features/catalog/catalogSlice';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+store.dispatch(fetchProductAsync());
 
 root.render(
   <React.StrictMode>
