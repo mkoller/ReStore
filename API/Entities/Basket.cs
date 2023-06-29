@@ -1,34 +1,29 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace API.Entities
 {
     public class Basket
     {
-        public int Id {get; set;}
-        public string BuyerId {get; set;}
-        
-        public List<BasketItem> Items {get; set;} = new();
+        public int Id { get; set; }
+        public string BuyerId { get; set; }
+        public List<BasketItem> Items { get; set; } = new List<BasketItem>();
 
-        public void Additem(Product product, int quantity) 
+        public void AddItem(Product product, int quantity)
         {
             if (Items.All(item => item.ProductId != product.Id))
             {
-                Items.Add(new BasketItem{Product = product, Quantity = quantity});
+                Items.Add(new BasketItem { Product = product, Quantity = quantity });
+                return;
             }
 
-            var existingItems = Items.FirstOrDefault(item => item.ProductId == product.Id);
-            if (existingItems != null) existingItems.Quantity += quantity;
+            var existingItem = Items.FirstOrDefault(item => item.ProductId == product.Id);
+            if (existingItem != null) existingItem.Quantity += quantity;
         }
 
-        public void RemoveItem(int productId, int quantity)
+        public void RemoveItem(int productId, int quantity = 1)
         {
-            var item = Items.FirstOrDefault(item => item.ProductId == productId);
+            var item = Items.FirstOrDefault(basketItem => basketItem.ProductId == productId);
             if (item == null) return;
             item.Quantity -= quantity;
-            if (item.Quantity == 0 ) Items.Remove(item);
+            if (item.Quantity == 0) Items.Remove(item);
         }
     }
 }
